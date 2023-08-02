@@ -9,8 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Restaurant_row(restaurant: restaurants[0])
-            .previewLayout(.fixed(width: 300, height: 70))
+        Welcomeview()
     }
 }
 
