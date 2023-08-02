@@ -1,0 +1,25 @@
+[
+    {
+       "name": "Truong",
+       "id": 1,
+       "address": "123, Nguyen Van Linh",
+       "description": "description",
+       "imageName": "restaurant1",
+       "coordinates": {
+           "latitude": 10.729410965174186,
+           "longitude": 106.69522548892152
+       }
+    },
+    {
+       "name": "Thinh",
+       "id": 2,
+       "address": "245, Nguyen Van Linh",
+       "description": "description",
+       "imageName": "restaurant2",
+       "coordinates": {
+           "latitude": 10.758256325746386,
+           "longitude": 106.67228491141948
+       }
+    },
+]
+
