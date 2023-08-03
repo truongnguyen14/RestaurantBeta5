@@ -46,11 +46,11 @@ struct Greeting: View {
                       .padding(.horizontal, 10)
                     
                 }
-                Spacer()
 
                 Image("fine-dining-icon-2")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
+                    .frame(width: 260)
                 Spacer()
                 
                 Button(action: {

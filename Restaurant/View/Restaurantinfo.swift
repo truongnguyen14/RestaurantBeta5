@@ -29,7 +29,6 @@ struct Restaurantinfo: View {
                         .padding(.bottom, -100)
                     Text(restaurant.name)
                         .font(.system(size: 40))
-                        .foregroundColor(.black)
                         .padding(.trailing, 240)
                         .padding(.top, 22)
                     Text(restaurant.address)
