@@ -7,14 +7,17 @@
 
 import SwiftUI
 import MapKit
+import UIKit
+
 struct Mapview: View {
     var coordinate: CLLocationCoordinate2D
+    //var name: String
     
     @State private var region = MKCoordinateRegion()
-
+    
     var body: some View {
-        Map(coordinateRegion: $region)
-            .onAppear {
+        Map(coordinateRegion: $region).onAppear()
+            {
                 setRegion(coordinate)
             }
     }

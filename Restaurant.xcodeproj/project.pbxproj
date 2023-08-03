@@ -21,6 +21,8 @@
 		7B84A9752A7A3272003DB44F /* Modeldata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B84A9742A7A3272003DB44F /* Modeldata.swift */; };
 		7B84A9772A7A3293003DB44F /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B84A9762A7A3293003DB44F /* Restaurant.swift */; };
 		7B84A97C2A7A3539003DB44F /* restaurants.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B84A97B2A7A3539003DB44F /* restaurants.json */; };
+		7BA9BBD32A7BC503008DB1F6 /* Viewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA9BBD22A7BC503008DB1F6 /* Viewcontroller.swift */; };
+		7BE2D48C2A7B8BF200E0D049 /* Colorconstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE2D48B2A7B8BF200E0D049 /* Colorconstant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		7B84A9742A7A3272003DB44F /* Modeldata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modeldata.swift; sourceTree = "<group>"; };
 		7B84A9762A7A3293003DB44F /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		7B84A97B2A7A3539003DB44F /* restaurants.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = restaurants.json; sourceTree = "<group>"; };
+		7BA9BBD22A7BC503008DB1F6 /* Viewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viewcontroller.swift; sourceTree = "<group>"; };
+		7BE2D48B2A7B8BF200E0D049 /* Colorconstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colorconstant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,8 @@
 				7B84A9742A7A3272003DB44F /* Modeldata.swift */,
 				7B84A9762A7A3293003DB44F /* Restaurant.swift */,
 				7B84A97B2A7A3539003DB44F /* restaurants.json */,
+				7BE2D48B2A7B8BF200E0D049 /* Colorconstant.swift */,
+				7BA9BBD22A7BC503008DB1F6 /* Viewcontroller.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -196,7 +202,9 @@
 				7B2E79BA2A7A78DC005741F0 /* Greeting.swift in Sources */,
 				7B2E79B42A7A78CA005741F0 /* Mapview.swift in Sources */,
 				7B84A9712A7A31D7003DB44F /* Restaurant_row.swift in Sources */,
+				7BA9BBD32A7BC503008DB1F6 /* Viewcontroller.swift in Sources */,
 				7B2E79B22A7A78CA005741F0 /* Restaurantinfo.swift in Sources */,
+				7BE2D48C2A7B8BF200E0D049 /* Colorconstant.swift in Sources */,
 				7B84A9752A7A3272003DB44F /* Modeldata.swift in Sources */,
 				7B2E79B92A7A78DC005741F0 /* WelcomeView.swift in Sources */,
 				7B2E79B52A7A78CA005741F0 /* CircleImage.swift in Sources */,

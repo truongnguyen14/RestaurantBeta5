@@ -8,18 +8,28 @@
 import SwiftUI
 
 struct Restaurantlist: View {
+    @AppStorage("isDarkMode") private var Dark = false
     var body: some View {
         NavigationView {
-            List(restaurants){
+            VStack{List(restaurants){
                 restaurant in
                 NavigationLink{
                     Restaurantinfo(restaurant: restaurant)
                 } label: {
                     Restaurant_row(restaurant: restaurant)
                 }
-                .navigationTitle("Restaurants in Ho Chi Minh city")
+                .navigationTitle("Restaurants")
             }
-        }
+            }
+            .toolbar{
+                ToolbarItem(placement: ToolbarItemPlacement.navigationBarTrailing){
+                    Button(action:{Dark.toggle()}, label:{ Dark ? Label("Dark", systemImage: "lightbulb.fill") : Label("Dark", systemImage: "lightbulb")
+                        
+                    })
+                }
+                           
+            }
+        }.environment(\.colorScheme, Dark ? .dark : .light)
     }
 }
 

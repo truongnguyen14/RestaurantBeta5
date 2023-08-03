@@ -10,7 +10,7 @@ struct Greeting: View {
     @Binding var active: Bool
     var body: some View {
         ZStack{
-            Color("Bisque").ignoresSafeArea(.all, edges: .all)
+            Color("Yellow").ignoresSafeArea(.all, edges: .all)
             
             VStack(spacing: 20){
                 Spacer()
@@ -27,7 +27,7 @@ struct Greeting: View {
                     """)
                       .font(.title3)
                       .fontWeight(.light)
-                      .foregroundColor(.red)
+                      .foregroundColor(.black)
                       .multilineTextAlignment(.center)
                       .padding(.horizontal, 10)
                     Text("""
@@ -35,7 +35,7 @@ struct Greeting: View {
                     """)
                       .font(.title3)
                       .fontWeight(.light)
-                      .foregroundColor(.red)
+                      .foregroundColor(.black)
                       .multilineTextAlignment(.center)
                       .padding(.horizontal, 10)
                     Text("Ho Chi Minh city")
@@ -48,7 +48,11 @@ struct Greeting: View {
                 }
                 Spacer()
 
-
+                Image("fine-dining-icon-2")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                Spacer()
+                
                 Button(action: {
                     active = false
                 }, label: {
