@@ -8,6 +8,8 @@ import SwiftUI
 
 struct Greeting: View {
     @Binding var active: Bool
+    @State var popup = false
+
     var body: some View {
         ZStack{
             Color("Yellow").ignoresSafeArea(.all, edges: .all)
@@ -25,28 +27,28 @@ struct Greeting: View {
                     Text("""
                     Enhence your fine-dining experience
                     """)
-                      .font(.title3)
-                      .fontWeight(.light)
-                      .foregroundColor(.black)
-                      .multilineTextAlignment(.center)
-                      .padding(.horizontal, 10)
+                    .font(.title3)
+                    .fontWeight(.light)
+                    .foregroundColor(.black)
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal, 10)
                     Text("""
                     In
                     """)
-                      .font(.title3)
-                      .fontWeight(.light)
-                      .foregroundColor(.black)
-                      .multilineTextAlignment(.center)
-                      .padding(.horizontal, 10)
+                    .font(.title3)
+                    .fontWeight(.light)
+                    .foregroundColor(.black)
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal, 10)
                     Text("Ho Chi Minh city")
-                      .font(.title3)
-                      .fontWeight(.light)
-                      .foregroundColor(.red)
-                      .multilineTextAlignment(.center)
-                      .padding(.horizontal, 10)
+                        .font(.title3)
+                        .fontWeight(.light)
+                        .foregroundColor(.red)
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal, 10)
                     
                 }
-
+                
                 Image("fine-dining-icon-2")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
@@ -57,14 +59,35 @@ struct Greeting: View {
                     active = false
                 }, label: {
                     Capsule()
-                      .fill(Color.black.opacity(8))
-                      .padding(8)
-                      .frame(width: 340, height:80)
-                      .overlay(Text("Discover")
-                        .font(.system(.title3, design: .rounded))
-                        .fontWeight(.bold)
-                        .foregroundColor(.white))
+                        .fill(Color.black.opacity(8))
+                        .padding(8)
+                        .frame(width: 340, height:80)
+                        .overlay(Text("Discover")
+                            .font(.system(.title3, design: .rounded))
+                            .fontWeight(.bold)
+                            .foregroundColor(.white))
                 })
+                
+                Button(action: {
+                    popup = true
+                })
+                {Image(systemName: "info.circle")
+                        .foregroundColor(.black)
+                        .padding(.leading, 290)
+                        .font(.system(size: 28))
+                        .fontWeight(.medium)
+                    
+                }
+                .alert(isPresented:$popup) {
+                    Alert(
+                        title: Text("App author"),
+                        message: Text("""
+                                      Name: Nguyen Tan Truong
+                                      Student ID: s3754703
+                                      Program: IT
+                                      """)
+                    )
+                }
             }
         }
     }

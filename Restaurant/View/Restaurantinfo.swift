@@ -2,8 +2,19 @@
 //  Restaurantinfo.swift
 //  Restaurant
 //
-//  Created by Truong, Nguyen Tan on 29/07/2023.
+//  Created by Truong, Nguyen Tan on 02/08/2023.
 //
+/*
+  RMIT University Vietnam
+  Course: COSC2659 iOS Development
+  Semester: 2023B
+  Assessment: Assignment 1
+  Author: Your name (e.g. Nguyen Van Minh)
+  ID: Your student id (e.g. 1234567)
+  Created  date: 02/08/2023 (e.g. 31/07/2023)
+  Last modified: 06/08/2023 (e.g. 05/08/2023)
+  Acknowledgement: Acknowledge the resources that you use here.
+*/
 
 import SwiftUI
 import CoreLocation
@@ -16,11 +27,6 @@ struct Restaurantinfo: View {
             ScrollView {
 
                 VStack {
-                    Text(restaurant.name)
-                        .font(.system(size: 20))
-                        .bold()
-                        .padding(.top, -88)
-                        //.padding(.bottom, -1020)
                     Mapview(coordinate: restaurant.locationCoordinate)
                         .edgesIgnoringSafeArea(.top)
                         .frame(height: 350)
@@ -29,17 +35,17 @@ struct Restaurantinfo: View {
                         .padding(.bottom, -100)
                     Text(restaurant.name)
                         .font(.system(size: 40))
-                        .padding(.trailing, 240)
+                        .padding(.trailing, 250)
                         .padding(.top, 22)
                     Text(restaurant.address)
                         .font(.system(size: 16))
                         .fontWeight(.medium)
                         .frame(width: 280)
                         .foregroundColor(Colorconstant.Iron)
-                        .padding(.trailing, 190)
+                        .padding(.trailing, 180)
                         .multilineTextAlignment(.center)
                     Divider()
-                        .frame(width: 350, height: 2)
+                        .frame(width: 355, height: 2)
                         .foregroundColor(.black)
                         .overlay(.black)
                     Text(restaurant.description)
@@ -49,12 +55,15 @@ struct Restaurantinfo: View {
                 }
             }
         }
+        .navigationTitle(restaurant.name)
+        .navigationBarTitleDisplayMode(.inline)
+        .bold()
     }
     
 }
 
 struct Restaurantinfo_Previews: PreviewProvider {
     static var previews: some View {
-        Restaurantinfo(restaurant: restaurants[0])
+        Restaurantinfo(restaurant: restaurantsdata[0])
     }
 }

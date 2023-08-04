@@ -4,12 +4,25 @@
 //
 //  Created by Truong, Nguyen Tan on 02/08/2023.
 //
+/*
+  RMIT University Vietnam
+  Course: COSC2659 iOS Development
+  Semester: 2023B
+  Assessment: Assignment 1
+  Author: Your name (e.g. Nguyen Van Minh)
+  ID: Your student id (e.g. 1234567)
+  Created  date: 02/08/2023 (e.g. 31/07/2023)
+  Last modified: 06/08/2023 (e.g. 05/08/2023)
+  Acknowledgement: Acknowledge the resources that you use here.
+*/
+
 
 import Foundation
 import SwiftUI
 import CoreLocation
+import MapKit
 
-struct Restaurant: Identifiable, Codable{
+struct Restaurant: Identifiable{
     var id: Int
     var name: String
     var address: String
@@ -20,17 +33,10 @@ struct Restaurant: Identifiable, Codable{
         Image(imageName)
     }
     
-    var coordinates: Coordinates
     
-    var locationCoordinate: CLLocationCoordinate2D {
-        CLLocationCoordinate2D(
-            latitude: coordinates.latitude,
-            longitude: coordinates.longitude
-        )
-    }
+    var locationCoordinate: CLLocationCoordinate2D
+        
+    
 }
 
-struct Coordinates: Codable {
-    var latitude: Double
-    var longitude: Double
-}
+
