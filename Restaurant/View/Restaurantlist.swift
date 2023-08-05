@@ -25,7 +25,7 @@ struct Restaurantlist: View {
     var body: some View {
         NavigationView {
             VStack{
-                List(Restaurantsdata().restaurantsdata){
+                List(Restaurants){
                 restaurant in
                 NavigationLink{
                     Restaurantinfo(restaurant: restaurant)
@@ -43,7 +43,8 @@ struct Restaurantlist: View {
                 }
                            
             }
-        }.environment(\.colorScheme, Dark ? .dark : .light)
+        }
+        .environment(\.colorScheme, Dark ? .dark : .light)
     }
 }
 

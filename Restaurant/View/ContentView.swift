@@ -1,9 +1,3 @@
-//
-//  ContentView.swift
-//  restaurant-ios
-//
-//  Created by Truong, Nguyen Tan on 02/08/2023.
-//
 /*
   RMIT University Vietnam
   Course: COSC2659 iOS Development

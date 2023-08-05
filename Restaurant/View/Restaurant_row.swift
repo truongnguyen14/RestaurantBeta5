@@ -34,9 +34,9 @@ struct Restaurant_row: View {
 struct Restaurant_row_Previews: PreviewProvider {
         static var previews: some View {
             Group {
-                Restaurant_row(restaurant: Restaurantsdata().restaurantsdata[0])
+                Restaurant_row(restaurant: Restaurants[0])
                     .previewLayout(.fixed(width: 300, height: 70))
-                Restaurant_row(restaurant: Restaurantsdata().restaurantsdata[1])
+                Restaurant_row(restaurant: Restaurants[1])
                     .previewLayout(.fixed(width: 300, height: 70))
             }
         }
