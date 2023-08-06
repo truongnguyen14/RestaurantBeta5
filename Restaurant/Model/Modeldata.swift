@@ -13,7 +13,7 @@
 import Foundation
 import CoreLocation
 
-var Restaurants = decodeJsonFromJsonFile(jsonFileName: "Restaurants.json")
+var restaurants = decodeJsonFromJsonFile(jsonFileName: "restaurants.json")
 
 // How to decode a json file into a struct
 func decodeJsonFromJsonFile(jsonFileName: String) -> [Restaurant] {

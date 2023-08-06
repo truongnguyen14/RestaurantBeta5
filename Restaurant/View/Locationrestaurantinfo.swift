@@ -5,7 +5,7 @@
   Assessment: Assignment 1
   Author: Nguyen Tan Truong (e.g. Nguyen Van Minh)
   ID: 3754703 (e.g. 1234567)
-  Created  date: 02/08/2023 (e.g. 31/07/2023)
+  Created  date: 04/08/2023 (e.g. 31/07/2023)
   Last modified: 06/08/2023 (e.g. 05/08/2023)
   Acknowledgement: Acknowledge the resources that you use here.
 */
@@ -14,7 +14,7 @@ import SwiftUI
 import CoreLocation
 import MapKit
 
-struct Restaurantinfo: View {
+struct Locationrestaurantinfo: View {
     
     @EnvironmentObject private var vm: Locationviewmodel
     let restaurant: Restaurant
@@ -42,7 +42,7 @@ struct Restaurantinfo: View {
                         .fontWeight(.medium)
                         .frame(width: 350, alignment: .leading)
                         .foregroundColor(Colorconstant.Iron)
-                        .multilineTextAlignment(.leading)
+                        .multilineTextAlignment(.center)
                     Text(restaurant.district)
                         .font(.system(size: 16))
                         .fontWeight(.medium)
@@ -83,16 +83,28 @@ struct Restaurantinfo: View {
         .navigationTitle(restaurant.name)
         .navigationBarTitleDisplayMode(.inline)
         .bold()
+        .overlay(Button {
+            vm.infoRestaurant = nil
+        } label: {
+            Image(systemName: "return.left")
+                .font(.headline)
+                .padding(16)
+                .foregroundColor(.black)
+                .background(.thickMaterial)
+                .shadow(radius: 4)
+                .padding()
+        }, alignment: .topLeading
+        )
     }
 }
 
-struct Restaurantinfo_Previews: PreviewProvider {
+struct Locationrestaurantinfo_Previews: PreviewProvider {
     static var previews: some View {
-        Restaurantinfo(restaurant: restaurants[8]).environmentObject(Locationviewmodel())
+        Locationrestaurantinfo(restaurant: restaurants[0]).environmentObject(Locationviewmodel())
     }
 }
 
-extension Restaurantinfo{
+extension Locationrestaurantinfo{
     
     private var mapLayer: some View{
         Map(coordinateRegion: .constant(MKCoordinateRegion(
@@ -104,3 +116,4 @@ extension Restaurantinfo{
             .allowsHitTesting(false)
     }
 }
+

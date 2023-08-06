@@ -16,7 +16,7 @@ import SwiftUI
 import CoreLocation
 import MapKit
 
-struct Restaurant: Identifiable, Codable{
+struct Restaurant: Identifiable, Codable, Equatable{
     var id: Int
     var name: String
     var address: String
@@ -36,6 +36,10 @@ struct Restaurant: Identifiable, Codable{
             latitude: coordinates.latitude,
             longitude: coordinates.longitude
         )
+    }
+    
+    static func == (lhs: Restaurant, rhs: Restaurant) -> Bool {
+        lhs.id == rhs.id
     }
 }
 

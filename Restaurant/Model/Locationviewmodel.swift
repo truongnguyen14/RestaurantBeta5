@@ -1,9 +1,3 @@
-//
-//  Locationviewmodel.swift
-//  Restaurant
-//
-//  Created by Truong, Nguyen Tan on 05/08/2023.
-//
 /*
   RMIT University Vietnam
   Course: COSC2659 iOS Development
@@ -34,8 +28,14 @@ class Locationviewmodel: ObservableObject{
     @Published var mapRegion: MKCoordinateRegion = MKCoordinateRegion()
     let mapSpan = MKCoordinateSpan(latitudeDelta: 0.004, longitudeDelta: 0.004)
     
+    //List of restaurant locations
+    @Published var showList: Bool = false
+    
+    //Show Restaurant info
+    @Published var infoRestaurant: Restaurant? = nil
+    
     init() {
-        let restaurants = Restaurants
+        let restaurants = restaurants
         self.restaurantsdata = restaurants
         self.mapLocation = restaurants.first!
         self.updateMapRegion(location: restaurants.first!)
@@ -48,5 +48,40 @@ class Locationviewmodel: ObservableObject{
                 span: mapSpan
             )
         }
+    }
+    
+    public func toggleLocationList(){
+        withAnimation(.easeInOut){
+            showList = !showList
+        }
+    }
+    
+    public func showLocation(location: Restaurant){
+        withAnimation(.easeInOut){
+            mapLocation = location
+            showList = false
+        }
+    }
+    
+    public func nextLocationbutton(){
+        // Get current location
+        guard let currentLocation = restaurantsdata.firstIndex(where: { $0 == mapLocation})
+        else {
+            print("Could not find current location")
+            return
+        }
+        
+        //Check the current location is valid
+        let nextLocation = currentLocation + 1
+        guard restaurantsdata.indices.contains(nextLocation)
+        else {
+            guard let firstlocation = restaurantsdata.first else { return }
+            showLocation(location: firstlocation)
+            return
+        }
+        
+        //Next location is valid
+        let nextLocation2 = restaurantsdata[nextLocation]
+        showLocation(location: nextLocation2)
     }
 }
