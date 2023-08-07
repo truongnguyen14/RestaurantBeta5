@@ -24,6 +24,7 @@ struct Restaurant: Identifiable, Codable, Equatable{
     var district: String
     var phone: String
     var url: String
+    var price: String
     var imageName: String
     var image: Image {
         Image(imageName)

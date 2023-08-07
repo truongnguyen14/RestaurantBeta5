@@ -19,15 +19,16 @@ struct Contactwebsite: View {
     let imageName: String
     
     var body: some View {
+        
+        //Shape button
         RoundedRectangle(cornerRadius: 25)
-            .fill(Color.black)
             .frame(height: 50.0)
             .overlay(HStack {
-                Image(systemName: imageName)
-                    .foregroundColor(.white)
-                Link(destination: URL(string: url)!) {
+                Image(systemName: imageName)        //Icon
+                    .foregroundColor(.orange)
+                Link(destination: URL(string: url)!) {      //Website URL
                     Text(text)
-                        .foregroundColor(.white)
+                        .foregroundColor(.orange)
                 }
                 
             })

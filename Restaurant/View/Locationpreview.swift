@@ -15,14 +15,19 @@ import SwiftUI
 
 struct Locationpreview: View {
     
-    
-    @EnvironmentObject private var vm: Locationviewmodel
+    @EnvironmentObject private var lvm: Locationviewmodel
     var restaurant: Restaurant
     
     var body: some View {
+        
+        //Align the card to the bottom
         HStack(alignment: .bottom) {
+            
+            //Avartar and name stay left side
             VStack(alignment: .leading){
                 ZStack{
+                    
+                    //Image
                     Image(restaurant.imageName)
                         .resizable()
                         .scaledToFill()
@@ -40,8 +45,10 @@ struct Locationpreview: View {
                 }
             }
                 VStack{
+                    
+                    //Information button
                     Button {
-                        vm.infoRestaurant = restaurant
+                        lvm.infoRestaurant = restaurant
                     } label: {
                         Text("Infomation")
                             .font(.headline)
@@ -51,8 +58,9 @@ struct Locationpreview: View {
                     }
                     .cornerRadius(10)
                     
+                    //Next location button
                     Button{
-                        vm.nextLocationbutton()
+                        lvm.nextLocationbutton()
                     } label: {
                         Text("Next location")
                             .font(.headline)
@@ -65,6 +73,8 @@ struct Locationpreview: View {
                 .padding(.bottom, 20)
         }
         .padding(20)
+        
+        //Background shape and color
         .background(
             RoundedRectangle(cornerRadius: 20)
                 .foregroundColor(Colorconstant.Yellow)

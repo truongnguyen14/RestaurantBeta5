@@ -23,13 +23,13 @@ struct Greeting: View {
             VStack(spacing: 20){
                 Spacer()
                 VStack(spacing: 0) {
-                    Text("Bonjour")
+                    Text("Bonjour")     //Hello app text
                         .font(.system(size: 60))
                         .fontWeight(.heavy)
                         .foregroundColor(.black)
                 }
                 .padding(.bottom, 20)
-                VStack(spacing: 20){
+                VStack(spacing: 20){        //Slogan
                     Text("""
                     Enhence your fine-dining experience
                     """)
@@ -38,11 +38,9 @@ struct Greeting: View {
                     .foregroundColor(.black)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 10)
-                    Text("""
-                    In
-                    """)
+                    Text("In")
                     .font(.title3)
-                    .fontWeight(.light)
+                    .fontWeight(.heavy)
                     .foregroundColor(.black)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 10)
@@ -55,12 +53,13 @@ struct Greeting: View {
                     
                 }
                 
-                Image("fine-dining-icon-2")
+                Image("fine-dining-icon-2")     //Icon
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 260)
                 Spacer()
                 
+                //Enter button
                 Button(action: {
                     active = false
                 }, label: {
@@ -74,6 +73,7 @@ struct Greeting: View {
                             .foregroundColor(.white))
                 })
                 
+                //Popup button
                 Button(action: {
                     popup = true
                 })
@@ -86,11 +86,11 @@ struct Greeting: View {
                 }
                 .alert(isPresented:$popup) {
                     Alert(
-                        title: Text("App author"),
+                        title: Text("App author"),      //Author information
                         message: Text("""
                                       Name: Nguyen Tan Truong
                                       Student ID: s3754703
-                                      Program: IT
+                                      Program: BP162
                                       """)
                     )
                 }

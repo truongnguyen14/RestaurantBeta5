@@ -5,6 +5,7 @@
        "address": "201B Nam Ki Khoi Nghia, ward 7",
        "district": "District 3",
        "phone": "090 4903230",
+       "price": "$ - $$",
        "url": "http://www.lamaison.vn/lien-he.html",
        "description": "     La Maison Wine Grill Bar is centrally located in Ho Chi Minh City, on Nam Ky Khoi Nghia Street. The restaurant is an ancient villa, located in a small alley, well protected from the busy traffic of Saigon. Here, customers will enjoy the true French cuisine style. La Maison's kitchen is proud to have chef Ngo Thanh Long assisting and the service staff is ready to help you awaken all senses with the best French dishes. La Maison Restaurant is pleased to welcome you at noon and evening every day in a classy and sophisticated space. In particular, we have live music and special events every week you can enjoy the fresh evening atmosphere and lively French music. We share a passion for giving you special and unforgettable experiences for visitors.",
        "imageName": "restaurant1",
@@ -20,6 +21,7 @@
        "description": "     MINIMAL CHEF - THE WORLD'S SMALLEST CHEF Experience this rich culinary journey with us. Where your imagination can enjoy great food combined with entertainment. Park Hyatt Saigon and Le Petit Chef invite you to experience the best of cinema and food in a 2-hour culinary journey. Following in the footsteps of the famous explorer Marco Polo, our clumsy little chef from France will travel along the famous Silk Road.",
        "district": "District 1",
        "phone": "028 35202359",
+       "price": "$$ - $$$",
        "url": "https://booking.lepetitchef.com/lpc4-park-hyatt-saigon/08-2023/2-pax",
        "imageName": "restaurant2",
        "coordinates": {
@@ -33,9 +35,10 @@
        "address": "57 Do Quang Dau",
        "district": "District 1",
        "phone": "None",
+       "price": "$ - $$",
        "url": "https://www.tnrsaigon.com/?gclid=Cj0KCQjwib2mBhDWARIsAPZUn_kbr5MNJCs3Dlh3mxDltBzNDuA65cp8J3IJ43YxRgaJZD6r0eEASQAaApJ5EALw_wcB",
        "description": "     Located in the heart of district 1. Distinction dive bar since 2008. Inexpensive, diviest, graffiti, hip hop, good times.",
-       "imageName": "restaurant2",
+       "imageName": "restaurant3",
        "coordinates": {
            "latitude": 10.768078853834483,
            "longitude": 106.6907266460319
@@ -47,9 +50,10 @@
        "address": "8-15 Ton Duc Thang Street, Renaissance Riverside Hotel Saigon",
        "district": "District 1",
        "phone": "028 38220033",
-       "url": "http://www.lamaison.vn/",
+       "price": "$ - $$",
+       "url": "https://www.facebook.com/RenaissanceSaigon/posts/3415025958546983/",
        "description": "     Kabin, a traditional Chinese restaurant specializing in Cantonese cuisine is known as one of the best restaurants in Ho Chi Minh City. The elegant restaurant is furnished with traditional oriental touches and offers also social business catering in exclusively designed private dining rooms. The restaurant’s Resident Chef from Hong Kong has taken authentic Cantonese cuisine to a new level and is delighted to guide you through your culinary journey. The friendly, attentive, and knowledgeable staff is making it all to be an all-around indulgent experience. Discovering traditional dishes with modern flair in an atmosphere perfectly suited to cater to both international and Asian travelers.",
-       "imageName": "restaurant2",
+       "imageName": "restaurant4",
        "coordinates": {
            "latitude": 10.775318071229897,
            "longitude": 106.70612975396811
@@ -61,9 +65,10 @@
        "address": "5D Nguyen Sieu, Ben Nghe ward",
        "district": "District 1",
        "phone": "028 3822 0671",
+       "price": "$ - $$$",
        "url": "http://lecortovietnam.com/make-a-reservation/",
        "description": "     Named after a cartoon sailor (whose fictional pet cat prowls the logo) that originated in Italy, this informal spot wears its haute cuisine credentials lightly. Cambodian-born Sakal Pheoung grew up in France’s Savoie and his menus reflect this dual heritage. Pan-fried foie gras is served with port jus and mango, while tofu parfait is crowned with pearls of salmon roe and micro-herbs grown in Dalat. Berry pavlova paired with coriander sorbet completes what is already a playful picture.",
-       "imageName": "restaurant2",
+       "imageName": "restaurant5",
        "coordinates": {
            "latitude": 10.77804282039292,
            "longitude": 106.70458335307326
@@ -75,9 +80,10 @@
        "address": "28th Floor, Sedona Suite, 92-94 Nam Kỳ Khởi Nghĩa, Bến Nghé Ward",
        "district": "District 1",
        "phone": "090 3116038",
+       "price": "$$ - $$$",
        "url": "https://laivn.com/#reservations",
        "description": "     Lai is a new exploration of Modern Cantonese cuisine offering a unique culinary experience. Through a distinctive menu, a dim sum bar selection, and a display of rich sashimi choices, our menu lets the ingredients take the lead. Fresh and imaginative, it invigorates traditional recipes for a modern audience. Our Chefs combine age-old techniques and meaningful flavors with imagination and refinement—the result is flavorful, unexpected, and elegantly executed dishes. Set over two floors, it contains a variety of dining areas, private dining rooms, and an opulent terrace. The decoration playfully fuses the traditional with the boldly modern, creating open yet connected spaces.",
-       "imageName": "restaurant2",
+       "imageName": "restaurant6",
        "coordinates": {
            "latitude": 10.774007911289432,
            "longitude": 106.7005597
@@ -89,9 +95,10 @@
        "address": "2nd Floor, 42 Nguyen Hue",
        "district": "District 1",
        "phone": "0971 805 672",
+       "price": "$ - $$$",
        "url": "https://benaras.club/contact-us/",
        "description": "     The Benaras restaurant chain always brings a great experience to diners, from authentic Indian dishes, constantly updating dishes from different countries, bringing the dishes richness , the harmony of spices, and carefully selected ingredients.",
-       "imageName": "restaurant2",
+       "imageName": "restaurant7",
        "coordinates": {
            "latitude": 10.775012513365013,
            "longitude": 106.70400596931206
@@ -103,9 +110,10 @@
        "address": "74/1 Hai Ba Trung Ben Nghe Ward",
        "district": "District 1",
        "phone": "028 38272090",
+       "price": "$ - $$$",
        "url": "https://vn.elgaucho.asia/home",
        "description": "     To our valued customers – We remain open serving and NOW delivering food (check our menu link for delivery options) while striving for excellence in health & food safety for all. In view of the coronavirus, we have taken additional precautionary steps on top of our routine health and safety practices to ensure everyone is safe and comfortable. All sanitizing and cleaning procedures are reinforced at all levels by increasing the frequency so as to ensure optimal hygiene and sanitation levels. We continue to monitor the situation closely and do more if necessary. We make every endeavor to make your experience a better one.Stay healthy and strong and Eat Well! Food is our passion and it is our aim to establish the benchmark in Southeast Asia and beyond for a contemporary, specialised steakhouse concept. We are proud to serve you the finest steakhouse-style food, using only the best available meat products sourced from selected farms in Victoria, New South Wales and the United States.",
-       "imageName": "restaurant2",
+       "imageName": "restaurant8",
        "coordinates": {
            "latitude": 10.778093509670322,
            "longitude": 106.70361132006768
@@ -117,9 +125,10 @@
        "address": "71-75 Hai Ba Trung Street",
        "district": "District 1",
        "phone": "028 38248468",
+       "price": "$ - $$$",
        "url": "https://www.xusaigon.com/",
        "description": "     The shared plate menu at Xu Restaurant includes both modern Vietnamese and traditional Vietnamese favorites. Although the idea of updating and modernizing authentic and traditional cuisine is not new, such experiments have only recently begun to be accepted and appreciated in Vietnam",
-       "imageName": "restaurant2",
+       "imageName": "restaurant9",
        "coordinates": {
            "latitude": 10.777027357915545,
            "longitude": 106.70442852568209
@@ -131,9 +140,10 @@
        "address": "10E1, Nguyen Thi Minh Khai",
        "district": "District 1",
        "phone": "078 999 0329",
+       "price": "$$$",
        "url": "https://sushirei.vn/#reservation",
        "description": "     Restaurant design: Our REI was designed by Joe Chikamori - a very famous Japanese architech in Vietnam now. With deeply “Wa” (Japanese style) materials imported from Japan, we bring out the peerless design in the heart of HCMC. Neta: Our sushi chef will carefully choose every single ingredient for REI from Tsukiji – a very famous seafood market in Japan. And with that finest ingredients combine to his exquisite talent, you will only be served the best sushi from REI. Syari: The ancients Japanese had a saying goes “Syari 8, Neta 2”. Meaning to say that Syari is the deciding factor for a sushi piece’s taste. And also there’s a secret skill to make the perfect Syari that was handed down from Edo reign. The excellent balance between Syari and Neta is the key for a perfect sushi piece.",
-       "imageName": "restaurant2",
+       "imageName": "restaurant10",
        "coordinates": {
            "latitude": 10.788610882328376,
            "longitude": 106.70248056066788
@@ -145,9 +155,10 @@
        "address": "138 Le Thi Hong Gam, Nguyen Trai ward",
        "district": "District 1",
        "phone": "028 3821 7736",
+       "price": "$ - $$",
        "url": "https://d1-concepts.com/dat-ban/",
        "description": "     Located right in the heart of bustling Ho Chi Minh City, Di Mai restaurant is a great space for diners to dispel all the pressures of life while enjoying the rich cultural cuisine of Vietnam. Vietnamese real. In the subconscious of many people, the image of Vietnamese dishes is always associated with a rustic and rural space, but coming to Aunt Mai, you will not be surprised by the harmonious, delicate and unique design between the two. rustic features and Indochinese architecture. The most impressive feature right in the center is the dining table designed from a tuk tuk; reminiscent of the old Saigon street image. Moreover, the meticulous care in costumes through the innovative ao dai of the waiters and the chef's aprons with Vietnamese motifs have contributed to perfecting the unique style of Auntie's restaurant. Roof. Aunt Mai is a harmonious combination of modern design and Vietnamese tradition. With a prominently designed dining room and two open facades facing the street, Aunt Mai creates a sophisticated twist when combining street food and traditional rustic cooking styles from across diverse culinary regions. , prepared according to modern presentation and cooking techniques.",
-       "imageName": "restaurant2",
+       "imageName": "restaurant11",
        "coordinates": {
            "latitude": 10.768908843493165,
            "longitude": 106.69714472360495

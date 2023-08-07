@@ -50,12 +50,14 @@ class Locationviewmodel: ObservableObject{
         }
     }
     
+    //Display and hide list
     public func toggleLocationList(){
         withAnimation(.easeInOut){
             showList = !showList
         }
     }
     
+    //Show list function
     public func showLocation(location: Restaurant){
         withAnimation(.easeInOut){
             mapLocation = location
@@ -63,6 +65,7 @@ class Locationviewmodel: ObservableObject{
         }
     }
     
+    //Next button
     public func nextLocationbutton(){
         // Get current location
         guard let currentLocation = restaurantsdata.firstIndex(where: { $0 == mapLocation})
@@ -81,7 +84,7 @@ class Locationviewmodel: ObservableObject{
         }
         
         //Next location is valid
-        let nextLocation2 = restaurantsdata[nextLocation]
-        showLocation(location: nextLocation2)
+        let secondLocation = restaurantsdata[nextLocation]
+        showLocation(location: secondLocation)
     }
 }

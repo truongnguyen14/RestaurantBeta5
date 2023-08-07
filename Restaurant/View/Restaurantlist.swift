@@ -13,14 +13,19 @@
 import SwiftUI
 
 struct Restaurantlist: View {
+    
     @AppStorage("isDarkMode") private var Dark = false
     @State private var searchItem: String = ""
     
     var body: some View {
         NavigationView {
+            
+            //Bottom Navigation
             TabView {
                 ZStack {
                     VStack{
+                        
+                        //List of restaurants
                         List(restaurants){
                             restaurant in
                             NavigationLink{
@@ -31,7 +36,7 @@ struct Restaurantlist: View {
                         }
                     }
                 }
-                .navigationBarItems(leading: Text("Restaurants")
+                .navigationBarItems(leading: Text("Restaurants") //Navigation title
                     .font(.system(size: 40)
                         .bold()
                     )
@@ -40,12 +45,16 @@ struct Restaurantlist: View {
                     Image(systemName: "list.bullet")
                     Text("List")
                 }
+                
+                //Display and show its location on map
                 Locationview().environmentObject(Locationviewmodel())
                     .tabItem(){
                         Image(systemName: "map.fill")
                         Text("Map")
                     }
             }
+            
+            //Light and dark mode switch
             .toolbar{
                 ToolbarItem(placement: ToolbarItemPlacement.navigationBarTrailing){
                     Button(action:{Dark.toggle()}, label:{ Dark ? Label("Dark", systemImage: "lightbulb.fill") : Label("Dark", systemImage: "lightbulb")

@@ -14,9 +14,12 @@
 import SwiftUI
 
 struct CircleImage: View {
+    
     var image: Image
     
     var body: some View {
+        
+        //Circle Image avartar
         image
             .clipShape(Circle())
             .overlay(Circle().stroke(Color(.black),lineWidth: 5))

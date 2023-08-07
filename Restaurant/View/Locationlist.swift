@@ -15,14 +15,16 @@ import SwiftUI
 
 struct Locationlist: View {
     
-    @EnvironmentObject private var vm: Locationviewmodel
+    @EnvironmentObject private var lvm: Locationviewmodel
     
     var body: some View {
+        
+        //List of location
         List {
-            ForEach(vm.restaurantsdata) {
+            ForEach(lvm.restaurantsdata) {
                 location in
                 Button {
-                    vm.showLocation(location: location)
+                    lvm.showLocation(location: location)
                 } label: {
                     Listrow(location: location)
                 }
@@ -51,7 +53,7 @@ extension Locationlist {
                 .cornerRadius(10)
             VStack(alignment: .leading){
                 Text(location.name)
-                    .font(.headline)
+                    .font(.title2)
             }
             .frame(maxWidth: .infinity, alignment: .leading)
         }

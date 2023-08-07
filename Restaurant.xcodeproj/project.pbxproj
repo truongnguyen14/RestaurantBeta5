@@ -26,6 +26,7 @@
 		7B84A9712A7A31D7003DB44F /* Restaurant_row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B84A9702A7A31D7003DB44F /* Restaurant_row.swift */; };
 		7B84A9772A7A3293003DB44F /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B84A9762A7A3293003DB44F /* Restaurant.swift */; };
 		7BA8D9242A7E21C200DF9A11 /* Locationviewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA8D9232A7E21C200DF9A11 /* Locationviewmodel.swift */; };
+		7BE027C32A808EEA00892E69 /* Mapview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE027C22A808EEA00892E69 /* Mapview.swift */; };
 		7BE2D48C2A7B8BF200E0D049 /* Colorconstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE2D48B2A7B8BF200E0D049 /* Colorconstant.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		7B84A9702A7A31D7003DB44F /* Restaurant_row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant_row.swift; sourceTree = "<group>"; };
 		7B84A9762A7A3293003DB44F /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		7BA8D9232A7E21C200DF9A11 /* Locationviewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locationviewmodel.swift; sourceTree = "<group>"; };
+		7BE027C22A808EEA00892E69 /* Mapview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapview.swift; sourceTree = "<group>"; };
 		7BE2D48B2A7B8BF200E0D049 /* Colorconstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colorconstant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,6 +119,7 @@
 				7B84A9612A7A30FE003DB44F /* RestaurantApp.swift */,
 				7B2E79AF2A7A78CA005741F0 /* CircleImage.swift */,
 				7B2E79AC2A7A78CA005741F0 /* Restaurantinfo.swift */,
+				7BE027C22A808EEA00892E69 /* Mapview.swift */,
 				7B2E79AD2A7A78CA005741F0 /* Restaurantlist.swift */,
 				7B84A9702A7A31D7003DB44F /* Restaurant_row.swift */,
 				7B4878042A7E44A8007AE7A5 /* Locationview.swift */,
@@ -223,6 +226,7 @@
 				7B2E79B52A7A78CA005741F0 /* CircleImage.swift in Sources */,
 				7B2E79B32A7A78CA005741F0 /* Restaurantlist.swift in Sources */,
 				7B2FDED92A7F89450078C00A /* Locationpreview.swift in Sources */,
+				7BE027C32A808EEA00892E69 /* Mapview.swift in Sources */,
 				7B48780F2A7E75D1007AE7A5 /* Contactwebsite.swift in Sources */,
 				7B84A9642A7A30FE003DB44F /* ContentView.swift in Sources */,
 				7B84A9622A7A30FE003DB44F /* RestaurantApp.swift in Sources */,

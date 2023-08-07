@@ -16,7 +16,7 @@ import MapKit
 
 struct Locationrestaurantinfo: View {
     
-    @EnvironmentObject private var vm: Locationviewmodel
+    @EnvironmentObject private var lvm: Locationviewmodel
     let restaurant: Restaurant
     
     var body: some View {
@@ -26,7 +26,7 @@ struct Locationrestaurantinfo: View {
             ScrollView {
 
                 VStack {
-                    mapLayer
+                    MapView
                         .edgesIgnoringSafeArea(.top)
                         .frame(height: 350)
                         .padding(.top, 100)
@@ -55,6 +55,12 @@ struct Locationrestaurantinfo: View {
                         .frame(width: 350, alignment: .leading)
                         .foregroundColor(Colorconstant.Iron)
                         .multilineTextAlignment(.center)
+                    Text("Price range: \(restaurant.price)")
+                        .font(.system(size: 16))
+                        .fontWeight(.medium)
+                        .frame(width: 350, alignment: .leading)
+                        .foregroundColor(Colorconstant.Iron)
+                        .multilineTextAlignment(.center)
                     Divider()
                         .frame(width: 355, height: 2)
                         .foregroundColor(.black)
@@ -68,13 +74,22 @@ struct Locationrestaurantinfo: View {
                         .fontWeight(.light)
                         .frame(width: 360, alignment: .center)
                         .multilineTextAlignment(.leading)
-                        .padding(.top, 20)
-                        .padding()
-                    Text("Contact for reservation")
-                        .font(.system(size: 30))
-                        .frame(width: 400, alignment: .center)
-                        .padding(.top, 30)
+                        .padding(.top, 5)
+                        .padding(.bottom, 50)
                 }
+                
+                    Spacer()
+                    
+                    VStack{
+                        Divider()
+                            .frame(width: 355, height: 2)
+                            .foregroundColor(.black)
+                            .overlay(.black)
+                        Text("Contact for reservation")
+                            .font(.system(size: 30))
+                            .frame(width: 400, alignment: .center)
+                            .padding(.top, 30)
+                    }
                 Contactwebsite(text: restaurant.name, url: restaurant.url, imageName: "phone.fill")
                     .padding()
             }
@@ -83,14 +98,14 @@ struct Locationrestaurantinfo: View {
         .navigationTitle(restaurant.name)
         .navigationBarTitleDisplayMode(.inline)
         .bold()
-        .overlay(Button {
-            vm.infoRestaurant = nil
+        .overlay(Button {           //Back button
+            lvm.infoRestaurant = nil
         } label: {
             Image(systemName: "return.left")
                 .font(.headline)
                 .padding(16)
-                .foregroundColor(.black)
-                .background(.thickMaterial)
+                .foregroundColor(.white)
+                .background(.black)
                 .shadow(radius: 4)
                 .padding()
         }, alignment: .topLeading
@@ -106,7 +121,7 @@ struct Locationrestaurantinfo_Previews: PreviewProvider {
 
 extension Locationrestaurantinfo{
     
-    private var mapLayer: some View{
+    private var MapView: some View{
         Map(coordinateRegion: .constant(MKCoordinateRegion(
             center: restaurant.locationCoordinate,
             span: MKCoordinateSpan(latitudeDelta: 0.004, longitudeDelta: 0.004))),

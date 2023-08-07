@@ -15,46 +15,51 @@ import MapKit
 
 struct Locationview: View {
     
-    @EnvironmentObject private var vm: Locationviewmodel
+    @EnvironmentObject private var lvm: Locationviewmodel
     
     var body: some View {
         ZStack{
-            Map(coordinateRegion: $vm.mapRegion, annotationItems: vm.restaurantsdata, annotationContent: { location in
+            
+            //Map shows location view
+            Map(coordinateRegion: $lvm.mapRegion, annotationItems: lvm.restaurantsdata, annotationContent: { location in
                 MapMarker(coordinate: location.locationCoordinate)
             })
                 .ignoresSafeArea()
+            
+            //Header
             VStack {
                 VStack{
-                    Button(action: vm.toggleLocationList) {
-                        Text(vm.mapLocation.name + ", " + vm.mapLocation.district)
+                    Button(action: lvm.toggleLocationList) {
+                        Text(lvm.mapLocation.name + ", " + lvm.mapLocation.district)
                             .font(.title2)
                             .fontWeight(.heavy)
-                            .foregroundColor(.black)
+                            .foregroundColor(.red)
                             .frame(height: 60)
                             .frame(maxWidth: .infinity)
                             .padding()
                             .overlay(alignment: .leading){
                                 Image(systemName: "arrow.down")
                                     .font(.headline)
-                                    .foregroundColor(.black)
+                                    .foregroundColor(.red)
                                     .padding()
                             }
                     }
-                    if vm.showList{
+                    if lvm.showList{
                         Locationlist()
                     }
                 }
-                .background(.thinMaterial)
+                .background(Colorconstant.Yellow)
                 .cornerRadius(10)
-                .shadow(color: Color.black.opacity(0.5), radius: 20, x: 0, y: 0)
+                .shadow(color: Color.black.opacity(0.8), radius: 20, x: 0, y: 0)
                 .padding()
                 .frame(maxHeight: .infinity, alignment: .top)
                 
                 Spacer()
                 
+                //Bottom preview card
                 ZStack(alignment: .bottom){
-                    ForEach(vm.restaurantsdata){ location in
-                        if vm.mapLocation == location{
+                    ForEach(lvm.restaurantsdata){ location in
+                        if lvm.mapLocation == location{
                             Locationpreview(restaurant: location)
                                 .shadow(color: Color.black.opacity(0.3), radius: 20)
                                 .padding()
@@ -62,7 +67,9 @@ struct Locationview: View {
                     }
                 }
             }
-            .sheet(item: $vm.infoRestaurant, onDismiss: nil){
+            
+            //Use sheet to perform back button
+            .sheet(item: $lvm.infoRestaurant, onDismiss: nil){
                 inforestaurant in Locationrestaurantinfo(restaurant: inforestaurant)
             }
         }

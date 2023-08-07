@@ -19,13 +19,16 @@
 import SwiftUI
 
 struct Restaurant_row: View {
+    
     var restaurant: Restaurant
     
     var body: some View {
         HStack {
+            //Item row
             restaurant.image
                 .resizable()
                 .frame(width: 60, height: 60)
+                .cornerRadius(15)
             Text(restaurant.name)
         }
     }
@@ -34,7 +37,7 @@ struct Restaurant_row: View {
 struct Restaurant_row_Previews: PreviewProvider {
         static var previews: some View {
             Group {
-                Restaurant_row(restaurant: restaurants[0])
+                Restaurant_row(restaurant: restaurants[2])
                     .previewLayout(.fixed(width: 300, height: 70))
                 Restaurant_row(restaurant: restaurants[1])
                     .previewLayout(.fixed(width: 300, height: 70))
